@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(rgba(255, 254, 254, 0.7), rgba(84, 84, 84, 0.584)),url(../pictures/bg.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #404040;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Increase the z-index value */
+  
+
+}
+
+.logo {
+    font-family: 'Bauhaus 93', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fffcfc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.logo2 {
+    font-family: 'Bauhaus 93', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation ul li {
+    margin-left: 20px;
+}
+
+.navigation ul li:first-child {
+    margin-left: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.navigation ul li a:hover {
+    color: #3A4359;
+    background-color: #f5f5f5;
+}
+
+.logo:hover {
+    opacity: 50%;
+}
+
+i {
+    margin-right: 3px;
+}
+
+/* Add this style for the dropdown */
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #404040;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.expiry-section,
+.zerostocks-section {
+    margin-top: 120px;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #404040;
+    color: #fff;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+.notification-icon {
+    color: #ff0000; /* Set the color for the notification icon */
+    margin-left: 5px; /* Adjust the spacing as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+    .logo {
+        margin-left: 10px;
+    }
+    .burger-menu {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #404040;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .logo2
+    {
+        font-size: 50px;
+    }
+
+    .navigation.show {
+        display: flex;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation ul li {
+     
+        margin-bottom: 10px;
+    }
+
+}
